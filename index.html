@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Order summary card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							"pale-blue": "#e0e8ff",
+							"bright-blue": "#3829e0",
+							"very-pale-blue": "#f5f7ff",
+							"desaturated-blue": "#7280a7",
+							"dark-blue": "#1f2f56",
+						},
+					},
+				},
+			}
+		</script>
+	</head>
+	<body
+		style="
+			font-family: 'Red Hat Display';
+			background-image: url(images/pattern-background-desktop.svg);
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position-x: center;
+		"
+		class="flex justify-center items-center bg-pale-blue mt-[6.4rem] text-desaturated-blue"
+	>
+		<div
+			class="w-[28.17rem] bg-white rounded-[1.3rem] overflow-hidden flex flex-col"
+		>
+			<img src="images/illustration-hero.svg" alt="" />
+			<div class="p-[3.07rem] flex flex-col items-center">
+				<h1
+					class="text-[1.74rem] font-[900] text-dark-blue leading-[1.9rem]"
+				>
+					Order Summary
+				</h1>
+				<p class="text-center mt-[1rem] leading-[1.7rem]">
+					You can now listen to millions of songs, audiobooks, and
+					podcasts on any device anywhere you like!
+				</p>
+				<div
+					class="flex items-center justify-between bg-very-pale-blue mt-[1.3rem] p-[1.5rem] rounded-[1rem] w-full"
+				>
+					<div class="flex gap-[1.2rem]">
+						<img src="images/icon-music.svg" alt="" />
+						<div class="flex flex-col">
+							<h2 class="font-[700] text-dark-blue">
+								Annual Plan
+							</h2>
+							<span>$59.99/year</span>
+						</div>
+					</div>
+					<a
+						class="text-[.9rem] underline font-[700] text-bright-blue"
+						>Change</a
+					>
+				</div>
+				<button
+					class="p-[.8rem] bg-bright-blue text-pale-blue font-[700] mt-[2rem] rounded-[.6rem] w-full"
+				>
+					Proceed to Payment
+				</button>
+				<span class="mt-[2rem] font-[700]">Cancel Order</span>
+			</div>
+		</div>
+
+		<!-- <div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
