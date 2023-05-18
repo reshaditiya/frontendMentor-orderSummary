@@ -24,6 +24,7 @@
 						colors: {
 							"pale-blue": "#e0e8ff",
 							"bright-blue": "#3829e0",
+							"active-blue": "#766cf1",
 							"very-pale-blue": "#f5f7ff",
 							"desaturated-blue": "#7280a7",
 							"dark-blue": "#1f2f56",
@@ -41,10 +42,10 @@
 			background-repeat: no-repeat;
 			background-position-x: center;
 		"
-		class="flex justify-center items-center bg-pale-blue mt-[6.4rem] text-desaturated-blue"
+		class="flex flex-col justify-center items-center bg-pale-blue mt-[6.4rem] text-desaturated-blue"
 	>
 		<div
-			class="w-[28.17rem] bg-white rounded-[1.3rem] overflow-hidden flex flex-col"
+			class="w-[28.17rem] bg-white rounded-[1.3rem] overflow-hidden flex flex-col drop-shadow-2xl"
 		>
 			<img src="images/illustration-hero.svg" alt="" />
 			<div class="p-[3.07rem] flex flex-col items-center">
@@ -70,26 +71,30 @@
 						</div>
 					</div>
 					<a
-						class="text-[.9rem] underline font-[700] text-bright-blue"
+						class="text-[.9rem] underline font-[700] text-bright-blue select-none cursor-pointer hover:no-underline hover:text-active-blue"
 						>Change</a
 					>
 				</div>
 				<button
-					class="p-[.8rem] bg-bright-blue text-pale-blue font-[700] mt-[2rem] rounded-[.6rem] w-full"
+					class="p-[.8rem] bg-bright-blue text-white font-[700] mt-[2rem] rounded-[.6rem] w-full drop-shadow-[0px_25px_25px_#e0e8ff] hover:bg-active-blue"
 				>
 					Proceed to Payment
 				</button>
-				<span class="mt-[2rem] font-[700]">Cancel Order</span>
+				<span
+					class="mt-[2rem] font-[700] hover:text-dark-blue select-none cursor-pointer"
+					>Cancel Order</span
+				>
 			</div>
 		</div>
-
-		<!-- <div class="attribution">
+<!-- 
+		<div class="mt-[5rem]">
 			Challenge by
 			<a
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by
+			<a href="https://reshaditiya.com" target="_blank">Resha Aditiya</a>.
 		</div> -->
 	</body>
 </html>
